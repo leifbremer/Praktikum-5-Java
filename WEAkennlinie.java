@@ -28,8 +28,8 @@ public class WEAkennlinie
             String zeile = reader.readLine();
             while(zeile != null){
                 zeile = reader.readLine();
-                String[] zeileArray = zeile.split(" ");
-                WEAkennline.put(new Double(zeileArray[0]),new Double(zeileArray[1]));
+                String[] zeileArray = zeile.split("\t");
+                WEAkennline.put(new Double(zeileArray[0]),new Double(zeileArray[2]));
             }
         }
         catch(FileNotFoundException e){
